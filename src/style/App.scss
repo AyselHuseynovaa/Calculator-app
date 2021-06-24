@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 259px;
+  border: 10px solid #000000;
+  background: #000000;
+
+  input {
+    height: 75px;
+    width: 249px;
+    border: 0px;
+    background: #000000;
+    color: white;
+    text-align: right;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-right: 10px;
+  }
+
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+
+    #clear {
+      grid-row: 1;
+      grid-column: 1/3;
+    }
+    #result {
+      grid-row: 5;
+      grid-column: 3/5;
+    }
+    button {
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #323232;
+      color: white;
+      font-weight: 800;
+    }
+    input:hover,
+    input:active,
+    button:hover,
+    button:active {
+      outline: none;
+      background-color:#646363 ;
+    }
+    .yellowColor{
+        background-color: #ee9b00;
+        
+    }
+    .yellowColor:hover{
+        background-color: #f0aa29;
+    }
+    .greyColor{
+        background-color: #a7a7a9;
+       
+    }
+    .greyColor:hover{
+        background-color:#bbb9b9 ;
+    }
+  }
+}
